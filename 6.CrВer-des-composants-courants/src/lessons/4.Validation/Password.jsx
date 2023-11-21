@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Password({inputStates, setInputStates, showValidation }) {
+export default function Password({ inputStates, setInputStates, showValidation }) {
     return (
         <>
             <label htmlFor="password" className="text-slate-50 inline-block mt-5">
@@ -16,6 +16,12 @@ export default function Password({inputStates, setInputStates, showValidation })
                 })}
 
             />
+
+            {(showValidation.password) &&
+                <p className="text-red-400 font-semibold">
+                    Au moins un chiffre et 6 caractères.
+                </p>
+            }
         </>
     )
 }

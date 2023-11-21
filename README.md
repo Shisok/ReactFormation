@@ -8,3 +8,4 @@ npx tailwindcss init -p
 -g pour global
 
 TailwindintelliSens
+npm install react-router-dom
